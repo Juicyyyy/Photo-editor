@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактор фото</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="header">
+        <label class="input-file">
+            <span class="input-file-text" type="text">Загрузите файл</span>
+            <input type="file" id="imageInput" name="file">        
+            <span class="input-file-btn">Выберите файл</span>
+        </label>
+    </div>
+    <div class="wrapper-canvas">
+        <canvas class="canvas" id="canvas"></canvas>
+        <div class="wrapper-filter">
+            <input class="input-color" type="color" id="textColorInput" value="#000000">
+            <input class="input" type="number" id="textSizeInput" placeholder="Размер текста">
+            <input class="input" type="text" id="textInput" placeholder="Введите текст">
+            <button class="button" id="addTextButton">Добавить текст</button>
+        </div>
+    </div>
+    <div class="wrapper-btn">
+        <button class="button" id="saveButton">Сохранить изображение</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

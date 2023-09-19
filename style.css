@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(245, 237, 226);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.canvas {
+    border: 2px solid #ddd;
+    object-fit: cover;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.button {
+    background-color: darkblue;
+    color: aliceblue;
+    font-size: 16px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.button:hover {
+    opacity: .7;
+}
+
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+
+.input-file-text {
+	padding: 4px 15px;
+	line-height: 40px;
+	text-align: left;
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	width: 200px;
+	border-radius: 50px 0px 0 50px;
+	border: 2px solid #ddd;
+}
+
+.input-file-btn {
+    position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 18px;
+	vertical-align: middle;
+	color: aliceblue;
+	text-align: center;
+	border-radius: 0 50px 50px 0;
+	background-color: darkblue;
+	padding: 15px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	transition: .3s ease;
+}
+
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.input-file:hover .input-file-btn {
+	opacity: .7;
+}
+
+.input-file:active .input-file-btn {
+    opacity: .7;
+}
+
+.wrapper-btn {
+    padding: 20px;
+}
+
+.wrapper-canvas {
+    display: flex;
+    gap: 20px;
+}
+
+.wrapper-filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.input-color {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    width: 50px;
+    height: 50px;
+}
+
+.input {
+    padding: 4px 15px;
+	width: 150px;
+    height: 30px;
+	border-radius: 50px;
+	border: 2px solid #ddd;
+    font-size: 16px;
+}
